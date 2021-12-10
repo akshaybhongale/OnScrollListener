@@ -1,7 +1,8 @@
 # OnScrollListener
 
 Usage :
- val mLayoutManger = LinearLayoutManager(applicationContext)
+ --
+        val mLayoutManger = LinearLayoutManager(applicationContext)
         val pageListener = OnScrollListener(mLayoutManger)
         pageListener.setOnNextPageListener(object : OnNextPageListener {
             override fun onNext() {
@@ -23,3 +24,4 @@ Usage :
             setHasFixedSize(true)
             addOnScrollListener(pageListener)
         }
+--
