@@ -2,18 +2,18 @@
 
 Step 1 : Add Jitpack repositry to your root level build.gradle
 --
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
+		allprojects {
+			repositories {
+				maven { url 'https://jitpack.io' }
+			}
 		}
-}
 
-Step 2 : Add the dependency
+
+Step 2 : Add the dependency to your project level build.gradle
 --
-dependencies {
-	        implementation 'com.github.akshaybhongale:OnScrollListener:1.1'
-	}
+		dependencies {
+	        	implementation 'com.github.akshaybhongale:OnScrollListener:1.1'
+		}
 
 
 Usage :
@@ -35,4 +35,3 @@ Usage :
             setHasFixedSize(true)
             addOnScrollListener(pageListener)
         }
---
